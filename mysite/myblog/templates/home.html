@@ -1,0 +1,18 @@
+<!-- templates/includes/header.html -->
+<!DOCTYPE html>
+<html lang="ja">
+  <!-- templates/home.html -->
+  {% include 'includes/head.html' %}
+  <body>
+    {% include 'includes/header.html' %}
+
+    <div class="container mt-5">
+      <h1>Welcome to My Django Project</h1>
+      <p>This is the homepage of the project.</p>
+    </div>
+
+    {% include 'includes/footer.html' %}
+    
+    {% comment %} {% bootstrap_javascript %} {% endcomment %}
+  </body>
+</html>
