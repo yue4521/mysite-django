@@ -1,8 +1,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Django Project</title>
+  <title>Yue-Project</title>
+  
+  <!-- django-bootstrap5 の各種ライブラリ読み込み -->
   {% load bootstrap5 %}
-  <!-- Bootstrap 5 CSSの読み込み -->
+  {% bootstrap_javascript %}
   {% bootstrap_css %}
+
+  <!-- オリジナルファイルの読み込み(css,javascript)-->
+  {% load static %}
+  <link href="{% static 'css/header.css' %}" rel="stylesheet">
+  <link href="{% static 'css/footer.css' %}" rel="stylesheet">
+
 </head>

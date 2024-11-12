@@ -1,0 +1,18 @@
+footer {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+}
+footer h5 {
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+footer a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+footer a:hover {
+    color: #00aced;
+    transform: scale(1.1);
+}
+footer p {
+    line-height: 1.7;
+}

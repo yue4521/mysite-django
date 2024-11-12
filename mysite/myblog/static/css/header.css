@@ -1,0 +1,61 @@
+/* ナビゲーションバーのスタイル */
+.navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-nav .active {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+/* ナビゲーションバーの影 */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* トグルボタンのスタイル調整 */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+/* ヘッダー全体のサイズを調整 */
+header {
+    padding: 2rem 0;  /* 上下の余白を増やして高さを大きく */
+    background-color: #343a40;  /* 背景色をダークに */
+}
+
+/* ヘッダー内のテキスト */
+header .navbar-brand {
+    font-size: 2.5rem;  /* サイト名のフォントサイズを大きく */
+    font-weight: bold;  /* 太字 */
+    color: #ffffff;  /* フォントカラー */
+}
+
+/* ヘッダー内のナビゲーションリンク */
+header .navbar-nav .nav-link {
+    font-size: 1.3rem;  /* リンクのフォントサイズを大きく */
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+/* ホバー時のリンクの色 */
+header .navbar-nav .nav-link:hover {
+    color: #fff;
+}
