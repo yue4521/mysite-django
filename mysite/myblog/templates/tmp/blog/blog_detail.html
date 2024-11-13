@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <article>
+        <h1>{{ post.title }}</h1>
+        <p>著者: {{ post.author }}</p>
+        <p>公開日: {{ post.published_at|date:"Y年m月d日" }}</p>
+        <div>
+            {{ post.content|safe }}
+        </div>
+    </article>
+    
+    <a href="{% url 'blog:list' %}">ブログ一覧に戻る</a>
+{% endblock %}
