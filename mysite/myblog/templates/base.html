@@ -1,16 +1,40 @@
 {% load bootstrap5%}
+{% load static %}
 
 <!-- templates/includes/header.html -->
 <!DOCTYPE html>
 <html lang="ja">
   <!-- templates/home.html -->
-  {% include 'includes/head.html' %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}ブログ{% endblock %}</title>
+    
+    <!-- django-bootstrap5 の各種ライブラリ読み込み -->
+    {% bootstrap_javascript %}
+    {% bootstrap_css %}
+  
+    <!-- オリジナルファイルの読み込み(css,javascript)-->
+    <link href="{% static 'css/header.css' %}" rel="stylesheet">
+    <link href="{% static 'css/footer.css' %}" rel="stylesheet">
+  
+  </head>  
+
   <body>
-    {% include 'includes/header.html' %}
+    <header>
+      {% include 'includes/header.html' %}
+    </header>
 
-    {% include 'sample/sample.html' %}
+    <main>
+      <!-- ページごとのコンテンツ -->
+      {% block content %}
+        {% include 'sample/sample.html' %}
+      {% endblock %}
+    </main>
 
-    {% include 'includes/footer.html' %}
+    <footer>
+      {% include 'includes/footer.html' %}
+    </footer>
 
   </body>
 </html>
