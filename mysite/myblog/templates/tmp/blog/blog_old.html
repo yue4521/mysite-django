@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">サンプルページ</h3>
+                </div>
+                <div class="card-body">
+                    <p class="lead">
+                        DjangoとBootstrap v5を使ったページのサンプルです。このテンプレートは、迅速に美しいWebページを作成するための参考になります。
+                    </p>
+                    <hr>
+                    <h5>主な機能:</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">レスポンシブデザイン</li>
+                        <li class="list-group-item">使いやすいコンポーネント</li>
+                        <li class="list-group-item">Djangoテンプレートとの統合</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="{% url 'home' %}" class="btn btn-primary btn-sm">ホームに戻る</a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm">詳しくはこちら</a>
+                    </div>
+                </div>
+                <div class="card-footer text-muted text-end">
+                    &copy; 2024 Yukiのプロジェクト
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock 
