@@ -1,5 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
 def home(request):
-    return render(request, 'blog_sample.html')
+    default_template = 'sample/sample.html'
+    templates = {
+        'A': 'blog/blog_sample1.html',
+        'B': 'blog/blog_sample2.html',
+    }
+    template_type = request.GET.get('type')
+    template = templates.get(template_type, default_template)
+    return render(request, template)
+

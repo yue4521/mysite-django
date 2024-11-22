@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}blogのサンプル{% endblock %}
+
+{% block content %}
+
+<div class="container my-5">
+    <section class="mb-5">
+        <h3 class="border-bottom pb-2">Pythonとは</h3>
+        <p>Pythonは、高水準で汎用的なプログラミング言語であり、簡潔で読みやすいコードが特徴です。Web開発、データ分析、AI開発など多岐にわたる分野で利用されています。</p>
+    </section>
+    <section class="mb-5">
+        <h4 class="border-bottom pb-2">基本構文</h4>
+        <p>以下はPythonの基本構文例です。</p>
+        <div class="bg-light p-3 rounded">
+            <pre class="mb-0"><code>print("Hello, World!")</code></pre>
+        </div>
+        <p class="mt-3">このプログラムは「Hello, World!」と画面に表示します。</p>
+    </section>
+    <section class="mb-5">
+        <h4 class="border-bottom pb-2">データ型</h4>
+        <p>主なデータ型は以下の通りです：</p>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>int</strong>: 整数型</li>
+            <li class="list-group-item"><strong>float</strong>: 浮動小数点型</li>
+            <li class="list-group-item"><strong>str</strong>: 文字列型</li>
+            <li class="list-group-item"><strong>list</strong>: リスト型</li>
+            <li class="list-group-item"><strong>dict</strong>: 辞書型</li>
+        </ul>
+    </section>
+    <section>
+        <h4 class="border-bottom pb-2">まとめ</h4>
+        <p>Pythonは初学者にも優しく、強力なライブラリを活用することで、多くの分野で効率的な開発が可能です。まずは基本構文を学び、簡単なプログラムから始めてみましょう！</p>
+    </section>
+</div>
+{% endblock %}
