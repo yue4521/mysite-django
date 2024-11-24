@@ -1,22 +1,25 @@
-<!-- ナビゲーションバー -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">MySite</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+<!-- templates/partials/header.html -->
+<header class="bg-blue text-white py-3 shadow">
+  <div class="container d-flex justify-content-between align-items-center">
+    {% comment %} <a href="{% url 'home' %}" class="text-white text-decoration-none"> {% endcomment %}
+    <a href="#" class="text-white text-decoration-none">
+      <h1 class="fs-3 fw-bold">My Website</h1>
+    </a>
+    <nav>
+      <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="/">Home</a>
+          {% comment %} <a class="nav-link text-white" href="{% url 'about' %}">About</a> {% endcomment %}
+          <a class="nav-link text-white" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="/about/">About</a>
+          {% comment %} <a class="nav-link text-white" href="{% url 'services' %}">Services</a> {% endcomment %}
+          <a class="nav-link text-white" href="#">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.path == '/contact/' %}active{% endif %}" href="/contact/">Contact</a>
+          {% comment %} <a class="nav-link text-white" href="{% url 'contact' %}">Contact</a> {% endcomment %}
+          <a class="nav-link text-white" href="#">Contact</a>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
-</nav>
+</header>
